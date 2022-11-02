@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Sign in Page</title>
+    <link rel="stylesheet" href="Styles/MainPage.css">
+    <script src="js/MianPage.js"></script>
+</head>
+<body>
+    <!-- Log in or sign up an Acount -->
+    <div class="SignIn">
+        <h1>Log Into Your Account</h1>
+        <input type="text" placeholder="Email" id="Email">
+        <input type="password" placeholder="Password" id="Password">
+
+        <button onclick="Linked(document.getElementById('Email').value, document.getElementById('Password').value)">Login</button>
+        <a onclick="AddUser(document.getElementById('Email').value, document.getElementById('Password').value)">Add User</a>
+
+        
+    </div>
+
+    
+    
+</body>
+</html>

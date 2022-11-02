@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Report Page</title>
+    <link rel="stylesheet" href="Styles/SecondPage.css">
+    <script src="js/SecondPage.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Bug Report System</h2>
+        <hr>
+    </header>
+
+    <!-- Parent of both Left and Right Divs -->
+    <div class="Entire-Page">
+
+
+
+        <!-- Entire Left Side Div -->
+        <div class="Left-Side">
+            <div class="ProfileImage">
+                <img src="Images/avatar-g27a1dc706_1280.png" alt="">
+            </div>
+            <br>
+            <p class="SignIn">Signd in as:</p>
+            <P class="SignIn">ADMIN</P>
+
+            <div class="Button-New">
+
+                <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+                <!-- Create new Ticket Button -->
+                <button id="OpenModal" onclick="NewTickets()">New Tickets</button>
+            </div>
+
+            <div class="modal-container" id="Modal_Container">
+                <div class="modal">
+                    
+                    <!-- For Both -->
+                    <div class="BothDivs">
+                        <!-- Left Side of modal -->
+                        <div class="Left">
+                            <label for="UserName">User Name</label>
+                            <label for="UserSurname">User Surname</label>
+                            <label for="ProgrammerAssigned">Programmer Assigned</label>
+                            <label for="TicketNumber">Ticket Number</label>
+                            <label for="Description">Description</label>
+                        </div>
+                        <!-- Right Side of modal -->
+                        <div class="Right">
+                            <input type="text" id="UserName">
+                            <input type="text" id="UserSurname">
+                            <input type="text" id="ProgrammerAssigned">
+                            <input type="text" id="TicketNumber">
+                            <input type="text" id="Description">
+                        </div>
+                    </div>
+
+                    <div class="SubmitAndExit">
+                        <button class="Submit" onclick="SubmitTicket(document.getElementById('UserName').value, document.getElementById('UserSurname').value, document.getElementById('ProgrammerAssigned').value, document.getElementById('TicketNumber').value, document.getElementById('Description').value)">Submit</button>
+                        <button class="Exit" onclick="CloseTickets()">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Entire Right Side Div -->
+        <div class="Right-Side">
+            <div class="Tickets" id="NewTickets">
+                <h3>New Tickets</h3>
+                <hr>
+                <div class="NewTicketContainer" id="AddTickets"></div>
+            </div>
+            <div class="Tickets" id="BusyTickets">
+                <h3>Busy Tickets</h3>
+                <hr>
+                <div class="BusyTicketContainer"></div>
+            </div>
+            <div class="Tickets" id="DoneTickets">
+                <h3>Done Tickets</h3>
+                <hr>
+                <div class="DoneTicketContainer"></div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

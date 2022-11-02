@@ -1,0 +1,50 @@
+html{
+    background-image: linear-gradient(to right, rgb(56, 55, 55) , rgb(194, 189, 189));
+}
+
+.SignIn{
+    margin: auto auto;
+    margin-top: 5%;
+    width: 450px;
+    height: 250px;
+    padding: 1em 1em;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    display: flex;
+    margin: auto auto;
+    margin-bottom: 15px;
+    width: 80%;
+    height: 3em;
+    background: transparent;
+    border: none;
+    text-align: center;
+    font-size: large;
+    
+}
+
+button{
+    display: block;
+    margin: auto auto;
+    width: 40%;
+    font-size: x-large;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+a{
+    display: block;
+    margin-left: 42%;
+    margin-top: 20px;
+    font-size: x-large;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+}
